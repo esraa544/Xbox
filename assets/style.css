@@ -603,10 +603,19 @@ footer .copyright div i:hover,
 }
 /*==================== Slider ====================*/
 .mySlides {
+    position: relative;
     display: none;
     transition: .5s;
+    animation: next linear .5s;
 }
-
+@keyframes next{
+    from{
+        right: -100%
+    }
+    to{
+        right: 0%
+    }
+}
 .slide_btns{
     justify-content: center;
     gap: 1rem;
